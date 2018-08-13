@@ -10,6 +10,9 @@ namespace SyncMan
     {
         static void Main(string[] args)
         {
+            OracleDbContext oracleDbContext = new OracleDbContext();
+            var subs = oracleDbContext.PTMS_SUBJECTS.ToList();
+            Console.ReadLine();
         }
     }
 }
